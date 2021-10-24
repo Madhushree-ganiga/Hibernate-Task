@@ -1,24 +1,29 @@
-package com.wolken.Facebook.entity;
+package com.wolken.Flipcart.entity;
 
-
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 @Getter
 @Setter
-@ToString
 @Entity
-@Table(name = "user_details")
+@Table
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class UserEntity {
-    @Id
-    private int id;
-    private String name;
-    private String email;
-    private String dob;
-    private String gender;
+	@Id
+	private int id;
+	private String username;
+	private String email;
+	private String password;
+	private long contactNumber;
 }

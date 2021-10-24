@@ -1,9 +1,10 @@
-package com.wolken.Facebook.utils;
+package com.wolken.Flipcart.utils;
+
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
+
+
 
 public class HibernateUtils {
     private static SessionFactory factory;
@@ -22,4 +23,9 @@ public class HibernateUtils {
     static public void closeFactory(){
         factory.close();
     }
+
+	public static SessionFactory getInstance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
